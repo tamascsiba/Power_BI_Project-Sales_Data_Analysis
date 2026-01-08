@@ -15,3 +15,9 @@ The report is designed to answer the following business questions and deliverabl
 7. **Order-level table** showing: **Sales / Profit / Discount / Net Sales / all remaining fields**, filterable via visual filters  
    (e.g., **Product / Date / Customer ID / Promotion Categories**)
 8. **Sales by city**
+
+## What’s in this repo
+
+- Power BI report file (`.pbix`)
+- Data files used for the model
+- Documentation and screenshots
