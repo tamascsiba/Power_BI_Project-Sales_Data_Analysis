@@ -20,4 +20,5 @@ The report is designed to answer the following business questions and deliverabl
 
 - Power BI report file (`Sales_Data_Analysis.pbix`)
 - Data files used for the model (`Store_Data.xlsx`)
-- Documentation and screenshots
+- Documentation (`Sales_Data_Analysis_Documentation.docx`)
+- Screenshots (`pics Folder`)
