@@ -4,7 +4,7 @@ This repository contains a **Power BI** report/dashboard focused on analyzing **
 
 ## Project Requirements
 
-The report is designed to answer the following business questions and deliverables: :contentReference[oaicite:0]{index=0}
+The report is designed to answer the following business questions and deliverables:
 
 1. **Top/Bottom 5 products** by **Sales / Profit / Quantity Sold**
 2. **Sales trends over time** (daily, monthly, quarterly, annually)
