@@ -19,5 +19,5 @@ The report is designed to answer the following business questions and deliverabl
 ## What’s in this repo
 
 - Power BI report file (`.pbix`)
-- Data files used for the model
+- Data files used for the model (`Store_Date.xlsx`)
 - Documentation and screenshots
