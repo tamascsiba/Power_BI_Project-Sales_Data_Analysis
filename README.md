@@ -91,13 +91,24 @@ The report is designed to answer the following business questions and deliverabl
 
 ---
 
-### Relationships (Star Schema)
+### Data Model (Relationships)
 
-| From (Fact) | To (Dimension) | Cardinality | Notes |
-|------------|-----------------|-------------|------|
-| `Fact Table[CustomerID]` | `Dim Customers[Customer ID]` | Many-to-one |  |
-| `Fact Table[Product ID]` | `Dim Product[ProductID]` | Many-to-one |  |
-| `Fact Table[PromotionID]` | `Dim Promotion[PromotionID]` | Many-to-one (optional) | `0` indicates no promo |
+The report uses a **star schema**: one **Fact Table** connected to three dimension tables.
+
+![Data model relationships](pics/relationships.png)
+
+### Relationship details
+
+| Dimension Table | Key (Dimension) | Fact Table Key | Cardinality | Cross-filter direction |
+|---|---|---|---|---|
+| `Dim Product` | `ProductID` | `Product ID` | 1 → * | Single (Dimension → Fact) |
+| `Dim Customers` | `Customer ID` | `CustomerID` | 1 → * | Single (Dimension → Fact) |
+| `Dim Promotion` | `PromotionID` | `PromotionID` | 1 → * | Single (Dimension → Fact) |
+
+**Notes**
+- This structure enables slicing facts by **Product**, **Customer (City/State)** and **Promotion**.
+- Measures such as `Total Sales`, `Discount Value`, and `Net Sales` are calculated at the fact level and aggregate correctly through the dimensions.
+
 
 ---
 
