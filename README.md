@@ -207,4 +207,14 @@ This page provides a geographic overview of sales performance and a high-level v
 
 ---
 
+### Overview page (high-level summary)
+An **Overview** page was created to bring the key high-level visuals into one place for quick scanning:
+- **Sales by City** (map) to show geographic distribution of sales
+- **Average Discount by Promotion** (column chart) to compare discount intensity across campaigns
+- **Profit vs. Net Sales** (scatter plot) to visualize the revenue–profit relationship
+- **Total Number of Orders** (KPI card) to display overall transaction volume
+
+This page acts as a single entry point before drilling down into the detailed analysis pages.
+
+![Overview](pics/overview.png)
 
