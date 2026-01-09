@@ -157,3 +157,20 @@ The same metric is used consistently on every chart, while the X-axis switches g
 - 
 ![Sales_Trends](pics/Sales_trends_over_time.png)
 
+---
+
+### Profit vs. Net Sales (relationship analysis)
+A scatter chart is used to visualize the relationship between **Profit** and **Net Sales** and to support outlier detection (cases where profit would deviate from revenue patterns).
+
+**Implementation**
+- **Visual:** Scatter chart (*Profit vs. Net Sales*)
+- **X-axis:** `Profit`
+- **Y-axis:** `Net Sales`
+- (Current version) no Legend / Size fields applied
+
+**Interpretation**
+- Since **Profit is derived as 10% of Net Sales** in Power Query, the points form an almost perfectly linear pattern (profit scales proportionally with net sales).
+- For deeper profitability insights, Profit can later be recalculated using actual costs/margins; the same visual would then help identify true profitability outliers.
+
+![Profit_vs_Net_sales](pics/sale_vs_profit.png)
+
