@@ -174,3 +174,19 @@ A scatter chart is used to visualize the relationship between **Profit** and **N
 
 ![Profit_vs_Net_sales](pics/sale_vs_profit.png)
 
+---
+
+### Average discount by promotion
+This page compares promotional intensity by showing the **average Discount Value** across promotion categories, helping identify which campaigns typically apply higher monetary discounts.
+
+**Implementation**
+- **Visual:** Clustered column chart
+- **X-axis:** `Promotion Name` (Dim Promotion)
+- **Y-axis:** `Discount Value` aggregated as **Average** (Average of Discount Value)
+
+**Interpretation**
+- Higher bars indicate promotions that, on average, generate larger discount amounts.
+- Since **Discount Value** depends on both discount % and product price (via Total/Net Sales), higher-priced products can drive larger discount values even with similar percentages.
+
+![Average discount by promotion](pics/avg_discount.png)
+
