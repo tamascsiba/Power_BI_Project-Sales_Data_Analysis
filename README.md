@@ -139,3 +139,21 @@ The rankings are implemented using **Power BI visual-level Top N filtering**:
 
 ![Top/Bottom](pics/top_bottom.png)
 
+---
+
+### Sales trends over time
+A dedicated trends page visualizes **Net Sales** across multiple time granularities to make seasonality and long-term changes easy to spot.  
+The same metric is used consistently on every chart, while the X-axis switches granularity using the **Date hierarchy**:
+
+- **Sales Trends by Days** (Day level)
+- **Sales Trends by Months** (Month level)
+- **Sales Trends by Quarters** (Quarter level)
+- **Sales Trends by Years** (Year level)
+
+**Implementation notes**
+- **X-axis:** `Date (dd/mm/yyyy)` using the built-in hierarchy (Year → Quarter → Month → Day)
+- **Y-axis:** `Sum of Net Sales` (recommended as a DAX measure, e.g. `Net Sales = SUM('Fact Table'[Net Sales])`)
+- Labels and display units (K/M) are used for readability while keeping the daily chart uncluttered.
+- 
+![Sales_Trends](pics/Sales_trends_over_time.png)
+
