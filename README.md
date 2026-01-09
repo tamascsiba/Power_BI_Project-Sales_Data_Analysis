@@ -121,3 +121,19 @@ The report uses a **star schema**: one **Fact Table** connected to three dimensi
 | `Total Sales` | `Units Sold × Price Per Unit` |
 | `Discount Value` | `(Total Sales × Discount Percentage) / 100` |
 | `Net Sales` | `Total Sales − Discount Value` |
+
+---
+
+### Top/Bottom 5 product ranking (result & implementation)
+
+A dedicated page was created to benchmark product performance using **Top 5** and **Bottom 5** rankings across key KPIs (Sales, Quantity Sold, Profit). The outcome is a set of bar charts that immediately highlight the highest- and lowest-performing products, making it easy to spot outliers and compare product performance at a glance.
+
+The rankings are implemented using **Power BI visual-level Top N filtering**:
+- The filter is applied per visual on **`Product Name`** (Filters pane → **Filters on this visual**).
+- **Filter type:** `Top N`
+- **Show items:** `Top 5` (and `Bottom 5` for the bottom charts)
+- **By value:** `Min of Net Sales` (as configured in the current version)
+- The filter is finalized using **Apply filter**.
+
+![Top/Bottom](pics/top_bottom.png)
+
