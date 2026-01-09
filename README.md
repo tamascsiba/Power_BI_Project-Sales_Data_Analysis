@@ -218,3 +218,26 @@ This page acts as a single entry point before drilling down into the detailed an
 
 ![Overview](pics/overview.png)
 
+---
+
+### User-selected period comparison (two date slicers)
+A user-input page was created to compare **two independent date ranges** side-by-side. It uses **two separate date tables** (`Date Table 1` and `Date Table 2`) so each slicer controls its own period without interfering with the other.
+
+**What it shows**
+- **Total Sales** (Period 1 vs Period 2)
+- **Total Profit** (Period 1 vs Period 2)
+- **Total Quantity Sold** (Period 1 vs Period 2)
+
+**DAX pattern (example for Period 2 – Net Sales)**
+```DAX
+Sum of Net Sales =
+CALCULATE(
+    SUM('Fact Table'[Net Sales]),
+    ALL('Date Table 1'),
+    USERELATIONSHIP('Date Table 2'[Date],'Fact Table'[Date (dd/mm/yyyy)])
+)
+```
+
+The same pattern is repeated for the other KPIs (Sales / Profit / Quantity) to produce paired measures (e.g., Sales 1 vs Sales 2).
+
+![User-selected](pics/user_input_dax.png)
