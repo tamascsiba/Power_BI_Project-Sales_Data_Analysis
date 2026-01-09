@@ -2,6 +2,8 @@
 
 This repository contains a **Power BI** report/dashboard focused on analyzing **sales performance** and enabling **order-level exploration** with flexible filtering. The project is from the **Complete Data Analyst Bootcamp From Basics To Advanced** Udemy course. The link of the course: https://www.udemy.com/course/complete-data-analyst-bootcamp-from-basics-to-advanced/
 
+> 📄 **Documentation:** This project is thoroughly documented in the accompanying file (`Sales_Data_Analysis_Documentation.pdf`), which contains detailed explanations of the dataset, Power Query transformations, data model relationships, and report page logic.
+
 ## Project Requirements
 
 The report is designed to answer the following business questions and deliverables:
