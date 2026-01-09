@@ -1,6 +1,6 @@
 # Power BI Project – Sales Performance Dashboard
 
-This repository contains a **Power BI** report/dashboard focused on analyzing **sales performance** and enabling **order-level exploration** with flexible filtering. The project is from the **Complete Data Analyst Bootcamp From Basics To Advanced** Udemy course. The link of the course: https://www.udemy.com/course/complete-data-analyst-bootcamp-from-basics-to-advanced/?couponCode=CP250105G1
+This repository contains a **Power BI** report/dashboard focused on analyzing **sales performance** and enabling **order-level exploration** with flexible filtering. The project is from the **Complete Data Analyst Bootcamp From Basics To Advanced** Udemy course. The link of the course: https://www.udemy.com/course/complete-data-analyst-bootcamp-from-basics-to-advanced/
 
 ## Project Requirements
 
