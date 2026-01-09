@@ -190,3 +190,21 @@ This page compares promotional intensity by showing the **average Discount Value
 
 ![Average discount by promotion](pics/avg_discount.png)
 
+
+---
+
+### Sales by City & total number of orders
+This page provides a geographic overview of sales performance and a high-level volume KPI.
+
+- **Sales by City:** Bubble map using `City` (Dim Customers) as the location and a sales metric (e.g., **Sum of Total Sales** or **Sum of Net Sales**) to control bubble size.
+- **Total Number of Orders:** KPI card showing the total number of transaction rows in the Fact Table (in this dataset: **3510**).
+
+**Implementation notes**
+- City should be categorized as **Data category = City** (and optionally Country/Region = India if geocoding ambiguity appears).
+- Total orders is typically implemented as `Total Orders = COUNTROWS('Fact Table')`.
+
+![orders_by_cities_and_total_number_of_orders](pics/orders_by_cities_and_total_number_of_orders.png)
+
+---
+
+
