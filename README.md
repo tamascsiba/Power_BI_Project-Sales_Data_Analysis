@@ -132,7 +132,7 @@ The rankings are implemented using **Power BI visual-level Top N filtering**:
 - The filter is applied per visual on **`Product Name`** (Filters pane → **Filters on this visual**).
 - **Filter type:** `Top N`
 - **Show items:** `Top 5` (and `Bottom 5` for the bottom charts)
-- **By value:** `Min of Net Sales` (as configured in the current version)
+- **By value:** Example: `Min of Net Sales`
 - The filter is finalized using **Apply filter**.
 
 ![Top/Bottom](pics/top_bottom.png)
