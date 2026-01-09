@@ -152,7 +152,7 @@ The same metric is used consistently on every chart, while the X-axis switches g
 
 **Implementation notes**
 - **X-axis:** `Date (dd/mm/yyyy)` using the built-in hierarchy (Year → Quarter → Month → Day)
-- **Y-axis:** `Sum of Net Sales` (recommended as a DAX measure, e.g. `Net Sales = SUM('Fact Table'[Net Sales])`)
+- **Y-axis:** `Sum of Net Sales`
 - Labels and display units (K/M) are used for readability while keeping the daily chart uncluttered.
 - 
 ![Sales_Trends](pics/Sales_trends_over_time.png)
